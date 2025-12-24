@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لعبة أطفالي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            margin: 0;
+            background: #222;
+            overflow: hidden;
+            touch-action: none;
+            font-family: system-ui, sans-serif;
+        }
+        canvas {
+            display: block;
+            background: linear-gradient(#87ceeb, #5fa8d3);
+        }
+        #ui {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: white;
+            z-index: 10;
+            text-shadow: 0 0 5px #000;
+        }
+        #buttons {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            z-index: 10;
+            user-select: none;
+        }
+        .btn {
+            width: 80px;
+            height: 80px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .btn:active {
+            background: rgba(0,0,0,0.7);
+        }
+    </style>
+</head>
+<body>
